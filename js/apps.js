@@ -1,8 +1,8 @@
-// Star Header
-// Start nab bar
+// Start Header
+
+// start nav bar 
 function dropbtn(){
-//   console.log('hi');
-  document.getElementById('mydropdown').classList.toggle('show');
+    document.getElementById('mydropdown').classList.toggle('show');
 }
 
 function dropfilter(){
@@ -10,32 +10,27 @@ function dropfilter(){
 
     getsearch = document.getElementById('search');
     filter = getsearch.value.toUpperCase();
-    getdropdiv = document.getElementById("mydropdown");
-    getlinks = getdropdiv.getElementsByTagName("a");
-
+    getdropdiv = document.getElementById('mydropdown');
+    getlinks = getdropdiv.getElementsByTagName('a');
     // console.log(getlinks);
 
-    for(var x = 0 ; x < getlinks.length ; x++){
+    for(var x = 0; x < getlinks.length; x++){
         // linkvalue = getlinks[x].textContent;
         linkvalue = getlinks[x].textContent || getlinks[x].innerText;
         // console.log(linkvalue);
 
-
         if(linkvalue.toUpperCase().indexOf(filter) > -1){
-            getlinks[x].style.display = "block"
-        }else{{
-            getlinks[x].style.display = "none"
-        }}
-
+            getlinks[x].style.display = "block";
+        }else{
+            getlinks[x].style.display = "none";
+        }
     }
 
-
+    // console.log(filter);
 }
-// End nab bar
+// end nav bar 
 
-
-// Start Auto Background
-
+// start auto background
 function* genfun(){
     var index = 8;
 
@@ -56,8 +51,6 @@ var getgen = genfun();
 // console.log(getgen.next().value);
 // console.log(getgen.next().value);
 // console.log(getgen.next().value);
-// console.log(getgen.next().value);
-
 
 var getheader = document.querySelector('header');
 getheader.style.backgroundImage = `url("./assets/img/banner/banner${getgen.next().value}.jpg")`;
@@ -69,9 +62,6 @@ function autoload(){
 }
 
 setInterval(autoload,2500);
+// end auto background
 
-// End Auto Background
-
-
-
-// End Header
+// End Header 

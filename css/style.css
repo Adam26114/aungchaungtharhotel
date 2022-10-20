@@ -16,16 +16,26 @@ header{
     background-position:center;
 
     position: relative;
+
+    transition:all 2s linear;
 }
 /* Start Nav bAr */
 .navbar{
-    background:linear-gradient(to right, rgba(0,0,0,1),rgba(0,0,0,0.5));
-
+    background: linear-gradient(to right,rgba(0,0,0,1),rgba(0,0,0,0.5));
+    z-index:100;
 }
 
 .nav-link{
     font-size:16px;
     color:#fff !important;
+}
+
+.navbar-toggler,
+.navbar-toggler:hover,
+.navbar-toggler:focus{
+    border:none;
+    outline:none;
+    box-shadow:none;
 }
 
 
@@ -48,7 +58,7 @@ header{
 }
 
 
-.dropdown-contents .show{
+.dropdown-contents.show{
     display:block;
 }
 
@@ -96,6 +106,7 @@ header{
     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3));
     box-shadow:10px 10px 100px 20px #000;
     border:2px dashed #fff;
+    border-radius:5px;
     padding:20px;
 
     animation-name:bnani;
