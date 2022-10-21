@@ -1,3 +1,12 @@
+// Start Jquery Area
+$(document).ready(function(){
+    //Start Room Section 
+    $('.roompopup').magnificPopup({type:'image'});
+    //En Room Section 
+
+});
+// End Jquery Area
+
 // Star Header
 // Start nab bar
 function dropbtn(){

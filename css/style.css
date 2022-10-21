@@ -102,7 +102,9 @@ header{
 
     transform:translate(-50%,-50%);
 }
+
 .bannerheaders{
+    min-width:600px;
     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3));
     box-shadow:10px 10px 100px 20px #000;
     border:2px dashed #fff;
@@ -135,3 +137,68 @@ header{
 /* End Banner Section */
 
 /* End Header Section */
+
+/* Start Bookin Section */
+.search-rooms{
+    width:80%;
+    background:linear-gradient(to left , skyblue,steelblue);
+
+    padding:30px 0;
+    margin-top:-60px;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.search-rooms .form-control{
+    max-width:20%;
+    display:inline;
+    margin:10px 5px;
+    border-radius:0;
+    border:none;
+}
+
+.search-rooms .form-control:focus{
+    outline:none;
+    border:none;
+    box-shadow:none;
+}
+
+.search-rooms input[type=text]{
+    width:200px;
+    transition:width .5s ease-in-out;
+}
+
+.search-rooms input[type=text]:focus{
+    width:100%;
+}
+/* End Bookin Section */
+
+/* Start Room Section */
+.rows{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.columns{
+    max-width:25%;
+    padding:0 5px;
+}
+
+.columns img{
+    width:100%;
+    margin:5px;
+}
+
+.columns img:hover{
+    opacity:.8;
+}
+
+@media (max-width:800px) {
+    .columns{
+        flex:50%;
+        max-width:50%;
+    }
+}
+/* End Room Section */
