@@ -202,3 +202,69 @@ header{
     }
 }
 /* End Room Section */
+/* Start Our Service Section */
+.iconboxs{
+    background-color:#fff;
+    box-shadow:0 3px 20px rgba(0,0,0,0.2);
+
+    padding:50px 20px;
+
+    position:relative;
+
+    margin-top:30px;
+    /* transition: all .3s; */
+}
+
+
+.iconboxs::before{
+    content:'';
+
+    width:100%;
+    height:5%;
+    background-color:purple;
+
+    position:absolute;
+    left:0;
+    bottom: 0;
+
+    transition:height .5s;
+}
+
+/* .iconboxs:hover{
+    transform:scale(1.1);
+} */
+
+.iconboxs:hover::before{
+    height:8%;
+}
+
+.iconboxs .icons{
+    width:70px;
+    height:70px;
+    background-color:purple;
+    color:#fff;
+    
+    display:grid;
+    place-items: center;
+
+    position: absolute;
+    left:calc(50% - 35px);
+    top:-35px;
+    
+    transform:rotate(45deg);
+    
+    transition:all .5s ease-in-out;
+}
+
+.icons i{
+    transform:rotate(-45deg);
+}
+
+.iconboxs:hover .icons{
+    background-color:transparent;
+    color:purple;
+    border:3px solid purple;
+    
+    transform:rotate(45deg) scale(1.1);
+}
+/* End Our Service Section */
