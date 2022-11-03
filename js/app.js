@@ -9,9 +9,18 @@ $(document).ready(function(){
 
 // Star Header
 // Start nab bar
-function dropbtn(){
-//   console.log('hi');
-  document.getElementById('mydropdown').classList.toggle('show');
+function dropbtn(e){
+    //   document.getElementById('mydropdown').classList.toggle('show');
+    //   console.log('hi');
+
+    // underfined
+
+    // console.log(e.target);
+    // console.log(e.target.nextElementSibling);
+
+    e.target.nextElementSibling.classList.toggle('show');
+
+
 }
 
 function dropfilter(){
@@ -19,8 +28,10 @@ function dropfilter(){
 
     getsearch = document.getElementById('search');
     filter = getsearch.value.toUpperCase();
-    getdropdiv = document.getElementById("mydropdown");
-    getlinks = getdropdiv.getElementsByTagName("a");
+    // getdropdiv = document.getElementById("mydropdown");
+    // getlinks = getdropdiv.getElementsByTagName("a");
+
+    getlinks = document.querySelectorAll(".mydropdowns a")
 
     // console.log(getlinks);
 

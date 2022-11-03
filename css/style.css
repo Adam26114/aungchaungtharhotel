@@ -52,6 +52,9 @@ header{
     width:230px;
     background-color:#f6f6f6;
     position: absolute;
+    left:50%;
+
+    transform:translateX(-50%);
     z-index:10;
 
     display:none;
