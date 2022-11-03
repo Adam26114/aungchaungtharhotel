@@ -93,5 +93,50 @@ setInterval(autoload,2500);
 // End Auto Background
 
 
-
 // End Header
+
+// Start Testimonials
+    const getcpmpanyname = document.querySelector('.companyname')
+    const getrole = document.querySelector('.role')
+    const gettestimonial = document.querySelector('.testimonial')
+
+    const testimonialdatas=[
+        {
+            name:"Rich Star Restaurant",
+            position:"Our Outlet",
+            text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            name:"48 Sky Bar Cafe",
+            position:"Our Partner",
+            text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            name: "52 Beach Hotel" ,
+            position: "Our Branch" ,
+            text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            name: "Cool Land Swimming Pool" ,
+            position: "Our Client" ,
+            text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+            name:"Chaung Thar SPA",
+            position: "Our Business",
+            text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        }
+    ];
+
+let idx = 0;
+
+function updatetestimonial(){
+
+}
+
+setInterval(updatetestimonial,10000)
+    
+
+// End Testimonials
+
+// 3TM
