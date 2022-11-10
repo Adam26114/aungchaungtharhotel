@@ -147,6 +147,10 @@ function updatetestimonial(){
     console.log(name);
     console.log(position);
     console.log(text);
+    
+    getcpmpanyname.textContent = name;
+    getrole.textContent = position;
+    gettestimonial.textContent = text;
 
 
     idx ++;
@@ -155,6 +159,8 @@ function updatetestimonial(){
         idx = 0 ;
     }
 }
+
+updatetestimonial();
 
 setInterval(updatetestimonial,10000);
     
