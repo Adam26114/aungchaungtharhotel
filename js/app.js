@@ -130,11 +130,33 @@ setInterval(autoload,2500);
 
 let idx = 0;
 
+// console.log(testimonialdatas[idx]);
+// console.log(testimonialdatas[idx].name);
+// console.log(testimonialdatas[idx].position);
+// console.log(testimonialdatas[idx].text);
+
 function updatetestimonial(){
 
+    // getcpmpanyname.textContent = testimonialdatas[idx].name;
+    // getrole.textContent = testimonialdatas[idx].position;
+    // gettestimonial.textContent = testimonialdatas[idx].text;
+
+
+    var {name,position,text} = testimonialdatas[idx];
+
+    console.log(name);
+    console.log(position);
+    console.log(text);
+
+
+    idx ++;
+
+    if(idx > testimonialdatas.length - 1){
+        idx = 0 ;
+    }
 }
 
-setInterval(updatetestimonial,10000)
+setInterval(updatetestimonial,10000);
     
 
 // End Testimonials
