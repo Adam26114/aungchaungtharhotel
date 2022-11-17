@@ -316,3 +316,16 @@ header{
     }
 }
 /* End Testimonials Sectionl */
+/* Start ADV Test Section */
+.adv-container{
+
+    height:400px;
+    background-image:url('../assets/img/banner/banner11.jpg');
+    background-size:cover;
+    background-position:center;
+}
+
+.advtext{
+
+}
+/* End ADV Test Section */
