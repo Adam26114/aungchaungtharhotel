@@ -178,7 +178,7 @@ function filterby(keyword){
     // console.log(getfilters);
 
     if(keyword === 'all'){
-
+        keyword = ''
     }
 
     for(var x = 0 ; x < getfilters.length;x++){
@@ -200,12 +200,12 @@ function addshowclass(ele,opt){
     var getfilters = ele.className.split(" ");
     // console.log(getfilters);
 
-    var getopst = opt.split(" ");
+    var getopt = opt.split(" ");
     // console.log(getopt);
     // console.log(getopt.length);
-    console.log(opt.length);
+    // console.log(opt.length);
 
-    for(var y = 0 ; y < getopst.length ; y++){
+    for(var y = 0 ; y < getopt.length ; y++){
         // console.log(getopt[y]);
 
         // console.log(getfilters.indexOf(getopt[y]) === -1 );
@@ -219,7 +219,46 @@ function addshowclass(ele,opt){
 
 function removeshowclass(ele,opt){
     // console.log(ele);
+    var getfilters = ele.className.split(' ');
+    // console.log(getfilters);
+
+    var getopt = opt.split(' ');
+    // console.log(getopt);
+    // console.log(getopt.length);
+
+    for(var k = 0 ; k < getfilters.length ; k++){
+        
+        // console.log(getfilters[k]);
+        // console.log(getfilters[0]);
+        // console.log(getfilters[1]);
+
+        // console.log(getfilters[k]);
+
+        while(getfilters.indexOf(getopt[k]) > -1 ){
+            getfilters.splice(getfilters.indexOf(getopt[k]),1);
+        }
+    }
+
+    // console.log(getfilters);
+    // console.log(getfilters.join(' '));
+
+    ele.className = getfilters.join(' ');
+    // console.log(ele.className);
+
 }
+
+var getftcontrol = document.getElementById('filtercontrol');
+var getlis = getftcontrol.getElementsByClassName('list-inline-item');
+
+for(var i = 0 ; i < getlis.length;i++){
+    getlis[i].addEventListener('click',function(){
+        var curractives = document.querySelector('.activeitems');
+        curractives.className = curractives.className.replace('activeitems','');
+
+        this.className += ' activeitems';
+    });
+}
+
 // End Properties Section
 
 // 3TM
