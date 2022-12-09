@@ -261,6 +261,33 @@ for(var i = 0 ; i < getlis.length;i++){
 
 // End Properties Section
 
-// 3TM
+// Start Contect Section
 
-// 1RM
+function tabbox(link,evn,btncolor){
+    var gettabconents = document.getElementsByClassName('tabcontents');
+    var getbtntabs = document.getElementsByClassName('btn-tabs')
+
+    for(var i = 0 ; i < gettabconents.length ; i++){
+        gettabconents[i].style.display = "none";
+        getbtntabs[i].style.backgroundColor = '';
+    }
+
+    document.getElementById(link).style.display = "block";
+    evn.style.backgroundColor = btncolor;
+    // console.log(evn);
+ }
+ document.getElementById('autoclick').click();
+
+// End Contact Section 
+
+//End Javascript Area
+
+//21PP
+
+//3TM
+
+//10CD
+
+//17ST
+
+//1RM 
