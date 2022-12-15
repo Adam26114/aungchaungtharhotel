@@ -471,3 +471,26 @@ header{
 }
 
 /* End Contact Section */
+/* Stat Chat Box */
+.chat-btn{
+    width:50px;
+    height:50px;
+    background-color:#555;
+    color:#fff;
+    border:none;
+    outline:none;
+    border-radius:50%;
+    padding:20px;
+    cursor: pointer;
+
+    position:fixed;
+    right:25px;
+    bottom:25px;
+
+    display: flex;
+    justify-content:center;
+    align-items:center;
+
+    opacity:0.8;
+}
+/* End Chat Box */

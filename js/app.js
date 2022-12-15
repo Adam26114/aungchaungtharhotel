@@ -280,6 +280,14 @@ function tabbox(link,evn,btncolor){
 
 // End Contact Section 
 
+// Start footer Section
+ const getyear = document.getElementById('getyear');
+
+ const autoyear = new Date().getUTCFullYear;
+
+ getyear.textContent = autoyear;
+// End footer Section
+
 //End Javascript Area
 
 //21PP
