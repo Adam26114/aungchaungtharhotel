@@ -493,4 +493,57 @@ header{
 
     opacity:0.8;
 }
+
+.chat-popup{
+    background-color:#fff;
+    border:3px solid #f3f3f3;
+    position:fixed;
+    right: 15px;
+    bottom:0px;
+
+    z-index:1;
+}
+
+.chat-container{
+    max-width:300px;
+    padding:10px;
+}
+
+.chat-container .messages{
+    overflow-y:scroll;
+}
+.form-container textarea{
+    width:100%;
+    background-color:#f2f2f2;
+    border:none;
+    outline:none;
+    margin:5px auto;
+
+    resize:none;
+}
+
+.form-container textarea:focus{
+    background-color:#ddd;
+}
+
+.form-container .btns{
+    width:100%;
+    background-color:steelblue;
+    color:#fff;
+    border:none;
+    outline:none;
+    margin-bottom:10px;
+    cursor:pointer;
+
+    opacity:.8;
+}
+
+.form-container .btns:nth-of-type(2){
+    background-color:red;
+}
+
+.form-container .btns:hover,.chat-btn:hover{
+    opacity:1;
+}
+
 /* End Chat Box */
