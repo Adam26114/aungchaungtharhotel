@@ -280,6 +280,18 @@ function tabbox(link,evn,btncolor){
 
 // End Contact Section 
 
+// Strat Chat Box
+const getmychat = getElementById('autoclick').click();
+
+function openchatbox(){
+    getmychat.style.display = "block";
+}
+
+function closechatbox(){
+    getmychat.style.display = "none";
+}
+// End Chat Box
+
 // Start footer Section
  const getyear = document.getElementById('getyear');
 

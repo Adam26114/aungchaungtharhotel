@@ -28,10 +28,10 @@
                 <div id="navbarcollapse" class="navbar-collapse collapse">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Room</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Blogs</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Restorant</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="#room" class="nav-link">Room</a></li>
+                        <li class="nav-item"><a href="#blog" class="nav-link">Blogs</a></li>
+                        <li class="nav-item"><a href="#service" class="nav-link">Restorant</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                         <li class="nav-item dropdowns">
                             <a href="#" class="nav-link dropbtn mydropdowns" onclick="dropbtn(event)">FAQ</a>
                             <div class="dropdown-contents mydropdowns">
@@ -84,7 +84,7 @@
     </header>
     <!-- End Header Section -->
     <!-- Start Booking Section -->
-    <section id="boking" class="search-rooms text-center">
+    <section id="booking" class="search-rooms text-center">
         <form action="" method="">
             <input type="date" name="checkin" id="checkin" class="form-control"/>
             <input type="date" name="checkout" id="checkout" class="form-control"/>
@@ -674,9 +674,9 @@
     <footer class="bg-dark pt-3">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item"><a href="#" class="nav-link text-muted px-2">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-muted px-2">Rooms</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-muted px-2">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-muted px-2">Contact</a></li>
+            <li class="nav-item"><a href="#rooms" class="nav-link text-muted px-2">Rooms</a></li>
+            <li class="nav-item"><a href="#pricing" class="nav-link text-muted px-2">Pricing</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link text-muted px-2">Contact</a></li>
             <li class="nav-item"><a href="#" class="nav-link text-muted px-2">FAQS</a></li>
         </ul>
         <div class="text-light d-flex justify-content-center">
@@ -686,7 +686,7 @@
     <!-- End Footer Section -->
 
     <!-- Start Chat Box -->
-    <button class="chat-btn" onclick=""><i class="fas fa-comment-alt"></i></button>
+    <button class="chat-btn" onclick="openchatbox()"><i class="fas fa-comment-alt"></i></button>
 
     <div id="mychat" class="chat-popup">
         <div class="chat-container">
@@ -719,7 +719,7 @@
                 <textarea name="message" id="message" class="message" placeholder="Message Here..."></textarea>
 
                 <button type="submit" class="btns">Send</button>
-                <button type="button" class="btns" onclick="">Close</button>
+                <button type="button" class="btns" onclick="closechatbox()">Close</button>
             </form>
         </div>
     </div>
@@ -739,3 +739,5 @@
 
 
 <!-- 17ST -->
+
+<!-- 16FN -->

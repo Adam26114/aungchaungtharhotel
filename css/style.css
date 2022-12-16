@@ -502,6 +502,8 @@ header{
     bottom:0px;
 
     z-index:1;
+
+    display:none;
 }
 
 .chat-container{
@@ -545,6 +547,38 @@ header{
 .form-container .btns:hover,.chat-btn:hover{
     opacity:1;
 }
+
+.admin{
+    background-color:#aaa;
+}
+
+.user{
+    background-color:#ddd;
+}
+
+.container{
+    padding:15px;
+    position: relative;
+}
+
+
+.container::after{
+    color:#777;
+}
+
+.time-left{
+    color:#777;
+}
+
+.time-right{
+    color:#777;
+
+    position: absolute;
+    left:0;
+    right:0;
+}
+
+
 
 /* End Chat Box */
 /* 15CB */
